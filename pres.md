@@ -1,4 +1,4 @@
-##What is Prometheus
+## What is Prometheus
 
 Prometheus is an opensource monitoring and alerting toolkit originally built at soundcloud.
 - Open source 
@@ -9,7 +9,7 @@ Prometheus is an opensource monitoring and alerting toolkit originally built at 
 
 ---
 
-##What do Prometheus metrics look like?
+## What do Prometheus metrics look like?
 
 ```
 node_filesystem_free{app="prometheus",chart="prometheus-6.6.1",component="node-exporter",device="/dev/xvda1",fstype="ext4",heritage="Tiller",instance="10.189.124.76:9100",job="kubernetes-service-endpoints",kubernetes_name="monitoring-prometheus-node-exporter",kubernetes_namespace="kube-monitoring",mountpoint="/",release="monitoring"} 121909030912
@@ -17,7 +17,7 @@ node_filesystem_free{app="prometheus",chart="prometheus-6.6.1",component="node-e
 
 ---
 
-##Alerting
+## Alerting
 Prometheus has a component called alert-manager, alert manager is responsible for alerting based on queries that you define.  It supports integration with PagerDuty, Slack and many other alerting tools
 
 ```
@@ -34,7 +34,7 @@ This is an example alert that based on a linear prediction of the disk space use
 
 ---
 
-##Third Party Exporters
+## Third Party Exporters
 Since Prometheus is a pull based it relies on the application you are monitoring exposing metrics formatted appropriately.  In order to simplify this there are third party exporters for, many many systems such as: docker, kubernetes, nginx, memcachd, mysql, redis, sqs, cloudwatch
 
 ---
