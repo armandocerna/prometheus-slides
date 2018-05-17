@@ -9,6 +9,11 @@ Prometheus is an opensource monitoring and alerting toolkit originally built at 
 
 ---
 
+## Custom Metrics
+No one knows your applications better then you.  Engineers can instrument custom metrics via a `/metrics` endpoint.  Prometheus will be configured to scrape those metrics
+
+---
+
 ## What do Prometheus metrics look like?
 
 ```
@@ -36,15 +41,3 @@ This is an example alert that based on a linear prediction of the disk space use
 
 ## Third Party Exporters
 Since Prometheus is a pull based it relies on the application you are monitoring exposing metrics formatted appropriately.  In order to simplify this there are third party exporters for, many many systems such as: docker, kubernetes, nginx, memcachd, mysql, redis, sqs, cloudwatch
-
----
-
-## Custom Metrics
-No one knows your applications better then you.  Engineers can instrument custom metrics via a `/metrics` endpoint.  Prometheus will be configured to scrape those metrics
-
----
-
-## Grafana
-
-Now that we have a robust query language and the mertrics to query we can create awesome dashboards like this
-![](./grafana.png)
